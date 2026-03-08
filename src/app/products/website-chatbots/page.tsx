@@ -4,9 +4,8 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { ContactFormModal } from "@/components/ContactFormModal"
 import { Button } from "@/components/ui/button"
-import { ShoppingCart, BarChart, Zap, ArrowRight } from "lucide-react"
+import { ShoppingCart, BarChart, Zap } from "lucide-react"
 import { useState } from "react"
-import Link from "next/link"
 
 export default function WebsiteChatbots() {
     const [isModalOpen, setIsModalOpen] = useState(false);

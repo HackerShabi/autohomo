@@ -13,15 +13,13 @@ import {
   ChevronDown,
   Zap,
   BarChart,
-  Settings,
-  PlayCircle
+  Settings
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
 
@@ -86,7 +84,7 @@ export default function Home() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Supercharge your store with AUTOHOMO's intelligent AI algorithms. We deploy tailored product recommendations, smart FAQ automation, and a 24/7 sales assistant that never sleeps—dramatically increasing your store's conversions.
+              Supercharge your store with AUTOHOMO&apos;s intelligent AI algorithms. We deploy tailored product recommendations, smart FAQ automation, and a 24/7 sales assistant that never sleeps—dramatically increasing your store&apos;s conversions.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -6,11 +6,13 @@ if (!MONGODB_URI) {
     throw new Error("Please define the MONGODB_URI environment variable inside .env.local");
 }
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 let cached = (global as any).mongoose;
 
 if (!cached) {
     cached = (global as any).mongoose = { conn: null, promise: null };
 }
+/* eslint-enable @typescript-eslint/no-explicit-any */
 
 async function connectToDatabase() {
     if (cached.conn) {

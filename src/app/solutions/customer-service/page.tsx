@@ -31,7 +31,7 @@ export default function CustomerServiceSolution() {
                         <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                             <Clock className="w-8 h-8 text-black mb-4" />
                             <h3 className="text-xl font-bold text-black mb-2">Instant WISMO</h3>
-                            <p className="text-gray-600">The AI automatically tracks orders and resolves "Where is my order?" questions instantly.</p>
+                            <p className="text-gray-600">The AI automatically tracks orders and resolves &quot;Where is my order?&quot; questions instantly.</p>
                         </div>
                         <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                             <ShieldCheck className="w-8 h-8 text-black mb-4" />

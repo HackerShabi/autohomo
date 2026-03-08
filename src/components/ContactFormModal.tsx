@@ -41,7 +41,8 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
                 setIsSuccess(false);
                 onClose();
             }, 3000);
-        } catch (err) {
+        } catch (error) {
+            console.error('Contact form error:', error);
             setError('Something went wrong. Please try again later.');
         } finally {
             setIsLoading(false);
@@ -63,7 +64,7 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
                         </svg>
                     </div>
                     <h3 className="text-xl font-medium text-gray-900 mb-2">Message Received!</h3>
-                    <p className="text-gray-500">We'll be in touch with you shortly to schedule your demo.</p>
+                    <p className="text-gray-500">We&apos;ll be in touch with you shortly to schedule your demo.</p>
                 </div>
             ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">

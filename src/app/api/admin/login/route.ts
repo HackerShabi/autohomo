@@ -28,6 +28,7 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json({ error: "Invalid credentials" }, { status: 401 });
     } catch (error) {
+        console.error("Login verification failed:", error);
         return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
     }
 }

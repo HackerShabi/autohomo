@@ -26,26 +26,25 @@ export default function AdminDashboard() {
 
     // Fetch leads on mount
     useEffect(() => {
-        fetchLeads();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    const fetchLeads = async () => {
-        setIsLoading(true);
-        try {
-            const res = await fetch("/api/admin/leads");
-            if (res.ok) {
-                const data = await res.json();
-                setLeads(data.leads || []);
-            } else if (res.status === 401) {
-                router.push("/admin/login");
+        const fetchLeads = async () => {
+            setIsLoading(true);
+            try {
+                const res = await fetch("/api/admin/leads");
+                if (res.ok) {
+                    const data = await res.json();
+                    setLeads(data.leads || []);
+                } else if (res.status === 401) {
+                    router.push("/admin/login");
+                }
+            } catch (error) {
+                console.error("Failed to fetch leads:", error);
+            } finally {
+                setIsLoading(false);
             }
-        } catch (error) {
-            console.error("Failed to fetch leads:", error);
-        } finally {
-            setIsLoading(false);
-        }
-    };
+        };
+
+        fetchLeads();
+    }, [router]);
 
     const handleLogout = async () => {
         await fetch("/api/admin/logout", { method: "POST" });
