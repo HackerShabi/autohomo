@@ -29,8 +29,8 @@ export async function POST(req: NextRequest) {
             { success: true, lead: newLead },
             { status: 201 }
         );
-    } catch {
-        console.error("Error creating lead");
+    } catch (error) {
+        console.error("Error creating lead:", error);
         return NextResponse.json(
             { error: "Internal Server Error" },
             { status: 500 }

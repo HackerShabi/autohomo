@@ -1,4 +1,9 @@
+import dns from "dns";
 import mongoose from "mongoose";
+
+// Fix: Router/ISP DNS may block SRV record lookups required by mongodb+srv://
+// Force Node's DNS resolver to use Google (8.8.8.8) and Cloudflare (1.1.1.1)
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
