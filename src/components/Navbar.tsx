@@ -65,12 +65,6 @@ export function Navbar({ onOpenModal }: NavbarProps) {
                         </div>
 
                         <div className="flex items-center space-x-4">
-                            <button
-                                onClick={onOpenModal}
-                                className="text-sm font-medium text-gray-600 hover:text-brand-600 transition-colors"
-                            >
-                                Contact Now
-                            </button>
                             <Button onClick={onOpenModal}>Get Free Demo</Button>
                         </div>
                     </div>
@@ -128,9 +122,6 @@ export function Navbar({ onOpenModal }: NavbarProps) {
                         FAQs
                     </Link>
                     <div className="pt-4 flex flex-col space-y-3 px-3">
-                        <Button variant="outline" className="w-full justify-center" onClick={() => { setIsMobileMenuOpen(false); onOpenModal(); }}>
-                            Contact Now
-                        </Button>
                         <Button className="w-full justify-center" onClick={() => { setIsMobileMenuOpen(false); onOpenModal(); }}>
                             Get Free Demo
                         </Button>
