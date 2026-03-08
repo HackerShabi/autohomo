@@ -96,7 +96,7 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
                             name="traffic"
                             required
                             disabled={isLoading}
-                            className="flex h-11 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 disabled:cursor-not-allowed disabled:opacity-50"
+                            className="flex h-11 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 disabled:cursor-not-allowed disabled:opacity-50"
                         >
                             <option value="">Select your traffic</option>
                             <option value="<10k">&lt;10k visitors</option>
@@ -113,7 +113,7 @@ export function ContactFormModal({ isOpen, onClose }: ContactFormModalProps) {
                             name="message"
                             disabled={isLoading}
                             rows={3}
-                            className="flex w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm shadow-sm transition-colors placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
+                            className="flex w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm text-gray-900 shadow-sm transition-colors placeholder:text-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 disabled:cursor-not-allowed disabled:opacity-50 resize-none"
                             placeholder="Tell us about your biggest challenges..."
                         />
                     </div>
