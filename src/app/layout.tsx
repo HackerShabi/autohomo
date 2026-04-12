@@ -18,6 +18,14 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${font.className} antialiased selection:bg-brand-100 selection:text-brand-900 bg-background text-foreground flex flex-col min-h-screen`}>
         {children}
+        <script
+          src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"
+          defer
+        />
+        <script
+          src="https://files.bpcontent.cloud/2026/02/22/20/20260222203414-JE4A5W5Y.json"
+          defer
+        />
       </body>
     </html>
   );
