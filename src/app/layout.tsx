@@ -24,7 +24,7 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <Script
-          src="https://files.bpcontent.cloud/2026/02/22/20/20260222203414-JE4A5W5Y.json"
+          src="https://files.bpcontent.cloud/2026/02/22/20/20260222203414-C82FYQF1.js"
           strategy="afterInteractive"
         />
       </body>
